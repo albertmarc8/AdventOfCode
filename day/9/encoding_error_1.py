@@ -28,7 +28,7 @@ def find_weak_point(arr, preamble):
         i += 1
 
 
-def find_contagious_sum(arr, number):
+def find_contiguous_sum(arr, number):
     i = 0
     while i < len(arr):
         j = i + 1
@@ -59,4 +59,4 @@ if __name__ == '__main__':
     arr = read_file()
     print("Encoding error")
     weak_number = find_weak_point(arr, 25)
-    find_contagious_sum(arr, weak_number)
+    find_contiguous_sum(arr, weak_number)
