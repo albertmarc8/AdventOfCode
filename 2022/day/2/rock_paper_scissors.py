@@ -49,6 +49,7 @@ def process_part1(c: List[List[chr]]):
 
     return score
 
+# 11972 no
 def process_part2(c: List[List[chr]]):
     score = 0
     for play in c:
