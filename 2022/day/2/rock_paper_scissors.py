@@ -1,4 +1,5 @@
 import sys
+import time
 from typing import *
 
 
@@ -84,6 +85,9 @@ def show_results(score: int):
 
 
 if __name__ == '__main__':
+    start_time = time.time()
     c = read_data(sys.stdin)
     n = process_part2(c)
     show_results(n)
+    print(f"--- %.8s seconds ---" % (time.time() - start_time))
+

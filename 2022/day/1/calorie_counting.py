@@ -1,4 +1,5 @@
 import sys
+import time
 from typing import *
 
 
@@ -41,6 +42,9 @@ def show_results(n_elf: List[int], calories_carrying: List[int]):
 
 
 if __name__ == '__main__':
+    start_time = time.time()
     c = read_data(sys.stdin)
     n, n_cal = process(c)
     show_results(n, n_cal)
+    print("--- %s seconds ---" % (time.time() - start_time))
+
